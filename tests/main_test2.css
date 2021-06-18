@@ -1,0 +1,145 @@
+body{
+    padding-bottom: 60px;
+    background-image: url(https://images.unsplash.com/photo-1560780552-ba54683cb263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+}
+img{
+    height: 450px;
+    width: 700px;
+    padding-top: 40px;
+}
+h1{
+    letter-spacing: 5px;
+    font-size: 37px;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 10px;
+}
+.description{
+    letter-spacing: 2px;
+    font-size: 21px;
+    font-family: cursive;
+    padding:10px;
+    font-weight: lighter;
+    color: black;
+    margin-right: 100px;
+    margin-left:100px;
+}
+.author{
+    text-align: right;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    font-family: cursive;
+    margin-right: 100px;
+    margin-left:100px;
+}
+.apatia a{
+    color: black;
+}
+.apatia a:hover{
+    background-color: lightgrey;
+    color: red;
+}
+
+
+.lntitle {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 50px 0px 10px 0px;
+padding-right: 100px;
+padding-left: 100px;
+}
+.lntitle_line {
+background: white;
+height: 2px;
+width: 100%;
+}
+.lntitle_text {
+font-variant: small-caps;
+color: black;
+padding: 0 10px;
+letter-spacing: 3px;
+font-size: 24px;
+font-family: cursive;
+font-weight: bold;
+}
+.testRules {
+border-bottom: 3px solid white;
+padding: 10px;
+margin-bottom: 50px;
+padding-bottom: 30px;
+margin-left:100px;
+margin-right: 100px;
+font-size: 18px;
+font-family: cursive;
+font-weight: normal;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+nav ul li {
+--c: black;
+color: var(--c);
+font-size: 18px;
+border: 0.3em solid var(--c);
+border-radius: 0.5em;
+width: 12em;
+height: 3em;
+text-transform: uppercase;
+font-weight: bold;
+font-family: sans-serif;
+letter-spacing: 0.1em;
+text-align: center;
+line-height: 3em;
+position: relative;
+overflow: hidden;
+z-index: 1;
+transition: 0.5s;
+margin: 1em;
+}
+
+nav ul li span {
+position: absolute;
+width: 25%;
+height: 100%;
+background-color: var(--c);
+transform: translateY(150%);
+border-radius: 50%;
+left: calc((var(--n) - 1) * 25%);
+transition: 0.5s;
+transition-delay: calc((var(--n) - 1) * 0.1s);
+z-index: -1;
+}
+.start a{
+color: black;
+text-decoration: none;
+}
+nav ul li a:hover {
+color: white;
+background-color: black;
+}
+
+nav ul li:hover span {
+transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+--n: 1;
+}
+nav ul li span:nth-child(2) {
+--n: 2;
+}
+
+nav ul li span:nth-child(3) {
+--n: 3;
+}
+
+nav ul li span:nth-child(4) {
+--n: 4;
+}
